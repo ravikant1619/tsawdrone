@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSAW MAPS PROJECT</title>
+    <script src="js/drone-data.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+</head>
+<body>
+
+    <div class="location-animate">     
+        <button type="button" class="btn btn-default" id="change-location-btn">Update Location start</button>
+        <button type="button" class="btn btn-default" id="stop-location-btn">Update Location stop</button>
+    </div>
+
+    <div class="drone-controller">
+        <div class="drone-static-info">
+            
+        </div>
+        <div class="flight-path-container"> 
+            <button type="button" class="btn btn-default" id="add-path-btn">Add flight path</button>
+            <button type="button" class="btn btn-primary" id="terminate-path-btn">Finish</button>
+            <button type="button" class="btn btn-danger" id="delete-vertex-btn">Delete Vertex</button>
+        </div>
+        <div class="path-input-container">
+            
+        </div>
+        <div class="close-btn">
+            <button type="button" class="btn btn-primary" id="close-control-btn">Close</button>
+        </div>
+        
+
+    </div>
+
+    <div id="map"></div>
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBmmndo-PRciJULFYNhffNv3eGVhlSjvM&callback=initMap">
+    </script>
+</body>
+</html>
